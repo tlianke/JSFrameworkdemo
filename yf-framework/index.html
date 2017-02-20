@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>yf_framework</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/lib/jquery.js"></script>
+		<script src="js/chivox.js"></script>
+		<script src="js/server.js"></script>
+		<script src="js/mainEvent.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		<!-- 框架的容器 -->
+		<div id="container" class="content">
+			<!-- 我是主框架 -->
+			<div id="main-framework">
+				<div class="header-area">
+					<div class="nav">
+						<div id="logo"><span></span></div>
+						<ul>
+							<li name="base_config" data-for="kyds" data-chivox-group="menu">
+								<a href="#" data-chivox-event="click:menuClick&kyds" >能力测评</a>
+							</li>
+							<li name="online_paper" data-for="zxzj">
+								<a href="#" data-chivox-event="click:menuClick&zxzj" data-chivox-group="menu">测评试卷</a>
+							</li>
+							<li name="topic_build" data-for="tkjs">
+								<a href="#" data-chivox-event="click:menuClick&tkjs" data-chivox-group="menu">测评试题</a>
+							</li>
+							<li name="live_config" data-for="zbzx">
+								<a href="#" data-chivox-event="click:menuClick&zbzx" data-chivox-group="menu">直播中心</a>
+							</li>
+						</ul>
+						<ul class="nav-sub">
+							<li><a href="#" id="userName"></a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sub-container" id="sub-container">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
